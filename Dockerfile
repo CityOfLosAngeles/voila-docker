@@ -6,4 +6,4 @@ RUN conda install --yes -c conda-forge --file /tmp/conda-requirements.txt
 COPY . /app
 
 EXPOSE 8866
-CMD ["voila", "/app/demo.ipynb"]
+CMD ["voila","--no-browser","--Voila.ip=*","/app/demo.ipynb"]
